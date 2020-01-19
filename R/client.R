@@ -218,3 +218,4 @@ generate_rd <- function(){
   out <- paste(utils::capture.output(jenkins("dummy")), collapse = "\n")
   paste("\\preformatted{", "## jk <- jenkins('https://ci.yourserver.com')", out, "}\n", sep = "\n")
 }
+
