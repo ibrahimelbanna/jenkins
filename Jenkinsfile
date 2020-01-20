@@ -19,8 +19,6 @@ pipeline {
                 echo 'hello world'
               }
          }
-
-         }
         stage('build'){
 
            steps {
@@ -29,6 +27,7 @@ pipeline {
                  }
 
              }
+        }
          
 	post {
 
