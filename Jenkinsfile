@@ -25,9 +25,17 @@ pipeline {
                 sh 'R CMD build .'
                 sh 'printenv'
 
-                 }
 
+                 }
              }
+        stage('backup')
+           steps {
+              echo 'Do backuping here'
+            }
+        stage('deploy')
+           steps {
+             echo 'Do deployment here'
+           }
         }
          
 	post {
