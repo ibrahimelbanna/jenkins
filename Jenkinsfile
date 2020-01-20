@@ -33,7 +33,7 @@ pipeline {
 
 	    always {
 
-		archiveArtifacts  artifacts: 'GIT_COMMIT.tar.gz' , fingerprint: true
+		archiveArtifacts  artifacts: '$GIT_COMMIT.tar.gz' , fingerprint: true
 
             }
 
