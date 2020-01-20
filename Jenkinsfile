@@ -22,13 +22,14 @@ pipeline {
                  }
 
              }
+        stage('Unit Tests'){
+            steps {
+                echo 'hello world'
+              }
+         }
 
          }
-         stage('Unit Tests') {
-            steps {
-                // Invoke unit tests
-              }
-}
+         
 	post {
 
 	    always {
