@@ -14,6 +14,13 @@ pipeline {
 
         stages {
 
+        stage('Unit Tests'){
+            steps {
+                echo 'hello world'
+              }
+         }
+
+         }
         stage('build'){
 
            steps {
@@ -22,19 +29,12 @@ pipeline {
                  }
 
              }
-        stage('Unit Tests'){
-            steps {
-                echo 'hello world'
-              }
-         }
-
-         }
          
 	post {
 
 	    always {
 
-		archiveArtifacts  artifacts: '*.tar.gz' , fingerprint: true
+		archiveArtifacts  artifacts: 'GIT_COMMIT.tar.gz' , fingerprint: true
 
             }
 
