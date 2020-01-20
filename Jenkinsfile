@@ -24,9 +24,9 @@ pipeline {
              }
 
          }
-		agent {
+         agent {
 
-        label 'dev'
+        label 'master'
 
            }
 
