@@ -14,7 +14,7 @@ pipeline {
 
         stages {
 
-        stage ('build'){
+        stage('build'){
 
            steps {
                 sh 'R CMD build .'
@@ -24,6 +24,11 @@ pipeline {
              }
 
          }
+         stage('Unit Tests') {
+            steps {
+                // Invoke unit tests
+              }
+}
 	post {
 
 	    always {
