@@ -23,6 +23,7 @@ pipeline {
 
            steps {
                 sh 'R CMD build .'
+                sh 'printenv'
 
                  }
 
@@ -39,8 +40,4 @@ pipeline {
 
 
         }   
-
-
-
-
   }
